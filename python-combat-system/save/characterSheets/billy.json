@@ -1,0 +1,10 @@
+{
+    "name" : "Billy",
+    "max_health_points": 150,
+    "speed_points": 100,
+    "magic_points": 0,
+    "attack_points": 150,
+    "defense_points": 100,
+    "special_attack_points": 0,
+    "special_defense_points": 0
+}

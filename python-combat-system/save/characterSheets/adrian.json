@@ -1,0 +1,10 @@
+{
+    "name" : "Adrian",
+    "max_health_points": 200,
+    "speed_points": 80,
+    "magic_points": 0,
+    "attack_points": 120,
+    "defense_points": 100,
+    "special_attack_points": 0,
+    "special_defense_points": 0
+}
