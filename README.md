@@ -1,0 +1,1 @@
+Small Python turn based combat simulator
