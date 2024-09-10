@@ -12,4 +12,25 @@ class Participant:
         return self.__statsSet
 
     def getTurnSpeedPoints(self):
-        return (self.__statsSet.speedPoints - 3) + random.randint(1, 6)
+        return (self.__statsSet.speedPoints - 10) + random.randint(0, 20)
+
+    def dumpCharacterSheet(self):
+        print("""Character: {}
+
+            - Max HP: {}
+            - Speed: {}
+            - Magic: {}
+            - Attack: {}
+            - Defense: {}
+            - Special Attack: {}
+            - Special Defense: {}
+        """.format(
+            self.__name,
+            self.__statsSet.maxHealthPoints,
+            self.__statsSet.speedPoints,
+            self.__statsSet.magicPoints,
+            self.__statsSet.attackPoints,
+            self.__statsSet.defensePoints,
+            self.__statsSet.specialAttackPoints,
+            self.__statsSet.specialDefensePoints,
+        ))

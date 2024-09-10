@@ -1,32 +1,31 @@
 import random
 
-from factories.StatsSetFactory import *
-from game.combat.utils.StatsSet import *
-from game.combat.participants.Party import *
-from game.combat.participants.Participant import *
-from game.combat.CombatController import *
+from factories.StatsSetFactory import * 
+from game.combat.utils.StatsSet import * 
+from game.combat.participants.Party import * 
+from game.combat.participants.Participant import * 
+from game.combat.CombatController import * 
+from save.SaveFileController import * 
 
 participantNames = [
-    'Gabriel',
-    'Adrian',
-    'Blanca',
-    'Max',
-    'Fer',
-    'Billy'
+    'adrian',
+    'billy',
+    'blanca',
+    'gabriel',
+    'ichiban',
+    'max'
 ]
 
 random.shuffle(participantNames)
 
-firstParty = Party('Chadz');
-secondParty = Party('ZZZ');
+firstParty = Party('Team #1');
+secondParty = Party('Team #2');
 
 i = 0;
 
 for participantName in  participantNames:
  
-    statsSet = StatsSetFactory.createWithRandomValues();
-    partyMember = Participant(participantName, statsSet)
-
+    partyMember = SaveFileController.loadCharacter(participantName)
 
     if i < 3:
         firstParty.addPartyMember(partyMember)
