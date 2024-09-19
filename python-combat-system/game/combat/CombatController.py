@@ -33,6 +33,10 @@ class CombatController:
         for turnParticipant in sortedTurnParticipants:
             i += 1
             print("{} - {}'s party member {} speed is : {}".format(i, turnParticipant["party"] ,turnParticipant["name"], turnParticipant['speed']))
+        
+        return sortedTurnParticipants
             
+    def useTurn(participant, move, targetParticipant):
+        print('Something')
 
     
